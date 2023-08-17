@@ -1,0 +1,51 @@
+{
+    "name": "ant-design-draggable-modal",
+    "version": "0.0.15",
+    "description": "Modal from Ant Design, draggable.",
+    "homepage": "https://github.com/DylanVann/ant-design-draggable-modal#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DylanVann/ant-design-draggable-modal.git"
+    },
+    "license": "MIT",
+    "author": "DylanVann",
+    "sideEffects": [
+        "dist/index.css"
+    ],
+    "main": "dist/index.js",
+    "module": "dist/ant-design-draggable-modal.esm.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "yarn build:bundle && yarn build:copy",
+        "build:bundle": "tsdx build",
+        "build:copy": "cp ../../README.md ./ && cp ./index.css ./dist",
+        "lint": "tsdx lint src",
+        "dev": "tsdx watch --noClean",
+        "test": "tsdx test --passWithNoTests",
+        "test-ci": "yarn build && yarn lint && yarn test"
+    },
+    "dependencies": {
+        "react-uid": "^2.3.3"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^14.0.0",
+        "@types/jest": "^29.5.3",
+        "@types/react": "^18.2.20",
+        "@types/react-dom": "^18.2.7",
+        "antd": "^5.8.3",
+        "eslint-config-prettier": "^9.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tsdx": "^0.14.1",
+        "tslib": "^2.6.1",
+        "typescript": "^5.1.6"
+    },
+    "peerDependencies": {
+        "antd": "^5.8.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
