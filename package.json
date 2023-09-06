@@ -1,6 +1,6 @@
 {
     "name": "ant-design-draggable-modal",
-    "version": "1.0.0",
+    "version": "0.0.15",
     "description": "Modal from Ant Design, draggable.",
     "homepage": "https://github.com/DylanVann/ant-design-draggable-modal#readme",
     "repository": {
@@ -35,7 +35,7 @@
         "@types/jest": "^29.5.3",
         "@types/react": "^18.2.20",
         "@types/react-dom": "^18.2.7",
-        "antd": "^5.8.5",
+        "antd": "^5.8.6",
         "eslint-config-prettier": "^9.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -44,7 +44,7 @@
         "typescript": "^5.1.6"
     },
     "peerDependencies": {
-        "antd": "^5.8.5",
+        "antd": "^5.8.6",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     }
